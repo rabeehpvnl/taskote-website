@@ -1,0 +1,87 @@
+{
+  "siteTitle": "Taskote",
+  "tagline": "കേരളത്തിലെ വിശ്വസനീയമായ ലോക്കൽ സർവീസുകൾ.",
+  "skipLink": "ഉള്ളടക്കത്തിലേക്ക് പോകൂ",
+  "whatsappNotice": {
+    "title": "WhatsApp Business സേവനം ഉടൻ ലഭ്യമാകും.",
+    "text": "Taskote-ന്റെ ഔദ്യോഗിക WhatsApp Business നമ്പർ ലോഞ്ചിന്റെ ഭാഗമായി സജ്ജീകരിച്ചു വരുന്നു. നമ്പർ ലഭ്യമാകുന്നതോടെ നിങ്ങൾക്ക് നേരിട്ട് മെസ്സേജ് അയക്കാവുന്നതാണ്.",
+    "dismiss": "ശരി"
+  },
+  "nav": {
+    "home": "ഹോം",
+    "about": "ഞങ്ങളെക്കുറിച്ച്",
+    "services": "സർവീസുകൾ",
+    "forProfessionals": "വിദഗ്ധർക്കായി",
+    "faq": "ചോദ്യങ്ങൾ",
+    "contact": "ബന്ധപ്പെടാൻ",
+    "getStarted": "തുടങ്ങാം"
+  },
+  "footer": {
+    "tagline": "കേരളത്തിലുടനീളം വീടുകൾക്കും വ്യാപാരസ്ഥാപനങ്ങൾക്കുമുള്ള ലോക്കൽ സർവീസുകൾ.",
+    "servicesHeading": "സർവീസുകൾ",
+    "companyHeading": "കമ്പനി",
+    "supportHeading": "സഹായം",
+    "allServices": "എല്ലാ സർവീസുകളും കാണുക",
+    "about": "Taskote-നെക്കുറിച്ച്",
+    "forProfessionals": "പ്രൊഫഷണലുകൾക്ക്",
+    "getStarted": "തുടങ്ങാം",
+    "faq": "പതിവുചോദ്യങ്ങൾ",
+    "contact": "ബന്ധപ്പെടാൻ",
+    "copyright": "Taskote. എല്ലാ അവകാശങ്ങളും നിക്ഷിപ്തം.",
+    "legalNotice": "നിബന്ധനകളും സ്വകാര്യതാ വിവരങ്ങളും ലോഞ്ചിന്റെ ഭാഗമായി പ്രസിദ്ധീകരിക്കും"
+  },
+  "buttons": {
+    "findProfessional": "വിദഗ്ധരെ കണ്ടെത്തൂ",
+    "browseServices": "സർവീസുകൾ കാണാം",
+    "exploreServices": "സർവീസുകൾ അറിയാം",
+    "viewDetails": "വിവരങ്ങൾ അറിയാം →",
+    "enquireWhatsApp": "WhatsApp-ൽ ചോദിക്കാം",
+    "chatWhatsApp": "WhatsApp-ൽ ബന്ധപ്പെടാം",
+    "registerWhatsApp": "WhatsApp-ൽ ചേരൂ",
+    "joinAsProfessional": "പ്രൊഫഷണലായി ചേരൂ",
+    "readFaq": "പതിവുചോദ്യങ്ങൾ",
+    "contactUs": "ബന്ധപ്പെടാൻ",
+    "getStarted": "തുടങ്ങാം",
+    "allServices": "എല്ലാ സർവീസുകളും",
+    "search": "തിരയുക",
+    "sendMessage": "സന്ദേശം അയയ്ക്കാം"
+  },
+  "serviceFinder": {
+    "label": "സർവീസ് വിഭാഗം തിരഞ്ഞെടുക്കുക",
+    "button": "വിദഗ്ധരെ കണ്ടെത്തൂ"
+  },
+  "serviceFilter": {
+    "label": "Search services",
+    "placeholder": "സർവീസുകൾ തിരയൂ (AC, Electrical, Plumbing...)",
+    "button": "തിരയുക",
+    "statusAll": "ലിസ്റ്റ് ചെയ്തിട്ടുള്ള 8 സർവീസുകൾ താഴെ കാണാം.",
+    "statusNone": "പൊരുത്തപ്പെടുന്ന സർവീസുകൾ കണ്ടെത്താനായില്ല.",
+    "statusOne": " സർവീസ് കണ്ടെത്തി.",
+    "statusMany": " സർവീസുകൾ കണ്ടെത്തി."
+  },
+  "contactForm": {
+    "title": "ഞങ്ങൾക്ക് സന്ദേശമയയ്ക്കൂ",
+    "note": "വേഗത്തിൽ മറുപടി ലഭിക്കാൻ WhatsApp വഴി ബന്ധപ്പെടാൻ നിർദ്ദേശിക്കുന്നു. താഴെയുള്ള ഫോം വഴിയും വിവരം നൽകാം.",
+    "nameLabel": "നിങ്ങളുടെ പേര്",
+    "emailLabel": "ഇമെയിൽ വിലാസം",
+    "topicLabel": "വിഷയം",
+    "topics": [
+      "സർവീസ് അന്വേഷണം",
+      "പ്രൊഫഷണലായി പങ്കാളിയാകാൻ",
+      "മറ്റ് അന്വേഷണങ്ങൾ"
+    ],
+    "messageLabel": "സന്ദേശം",
+    "submitButton": "സന്ദേശം അയയ്ക്കാം",
+    "messages": {
+      "disconnected": "ഫോം മെസ്സേജിംഗ് സജ്ജീകരിച്ചു വരുന്നു. വേഗത്തിലുള്ള സഹായത്തിന് ദയവായി WhatsApp Business വഴി ബന്ധപ്പെടുക.",
+      "sending": "അയയ്ക്കുന്നു…",
+      "sent": "സന്ദേശം അയച്ചു. നന്ദി.",
+      "failed": "സന്ദേശം അയയ്ക്കാനായില്ല. ദയവായി അല്പം കഴിഞ്ഞ് വീണ്ടും ശ്രമിക്കുകയോ WhatsApp വഴി ബന്ധപ്പെടുകയോ ചെയ്യുക.",
+      "validation": "നിങ്ങളുടെ പേരും ശരിയായ ഇമെയിൽ വിലാസവും സന്ദേശവും ദയവായി നൽകുക."
+    }
+  },
+  "breadcrumbs": {
+    "home": "ഹോം",
+    "services": "സർവീസുകൾ"
+  }
+}

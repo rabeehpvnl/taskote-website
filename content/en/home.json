@@ -1,0 +1,95 @@
+{
+  "meta": {
+    "title": "Taskote | Local services across Kerala",
+    "description": "Explore local service categories for homes, shops, offices and commercial establishments across Kerala. Enquire directly via WhatsApp Business to find nearby professionals."
+  },
+  "hero": {
+    "eyebrow": "Local help, across Kerala",
+    "titlePrefix": "Local services from nearby professionals, ",
+    "titleAccent": "made simple",
+    "lead": "Explore listed service categories for homes, shops, offices and commercial establishments across Kerala. Contact us on WhatsApp Business to enquire and connect with nearby professionals.",
+    "bullets": [
+      "Eight listed service categories",
+      "Clear scope of work before you choose",
+      "Direct enquiries via WhatsApp Business"
+    ],
+    "mosaicNoteTitle": "Help for home & business",
+    "mosaicNoteSubtitle": "Explore services across Kerala",
+    "photoAlts": {
+      "electrical": "Electrician working on a distribution board",
+      "cleaning": "Cleaning professional wiping a table with yellow gloves",
+      "appliance": "Technician repairing a washing machine"
+    }
+  },
+  "popular": {
+    "title": "Popular services",
+    "subtitle": "Explore listed services for repairs, maintenance and improvements.",
+    "linkText": "See all eight services →",
+    "featuredSlugs": ["ac-repair", "plumbing", "carpentry", "painting"]
+  },
+  "howItWorks": {
+    "title": "How Taskote works",
+    "subtitle": "Explore services here, then connect with our team on WhatsApp.",
+    "steps": [
+      {
+        "title": "Choose a service",
+        "desc": "See what each category covers and choose the one that fits your requirement."
+      },
+      {
+        "title": "Message on WhatsApp",
+        "desc": "Send us your requirement and location on WhatsApp Business for quick guidance."
+      },
+      {
+        "title": "Connect with a professional",
+        "desc": "Get connected with trusted, experienced local professionals in your area."
+      }
+    ]
+  },
+  "valueProp": {
+    "title": "Local services, clearly explained",
+    "lead": "Explore listed categories for homes, shops, offices and commercial establishments. Enquiries are handled directly via WhatsApp Business.",
+    "reasons": [
+      {
+        "title": "Local professionals",
+        "desc": "Discover listed service categories relevant to customers and establishments in your area."
+      },
+      {
+        "title": "Clear categories",
+        "desc": "Each service explains what is covered, so you can describe your job with complete confidence."
+      },
+      {
+        "title": "Direct WhatsApp assistance",
+        "desc": "Fast, personal communication without requiring app downloads or complicated sign-in."
+      },
+      {
+        "title": "Support when you need it",
+        "desc": "Questions about a service or requirements are handled directly by the Taskote team."
+      }
+    ]
+  },
+  "clarity": {
+    "title": "Know what to expect",
+    "lead": "Explore listed service categories for homes, shops, offices and commercial establishments. Connect directly on WhatsApp for service enquiries.",
+    "checks": [
+      "Professionals register directly with Taskote on WhatsApp",
+      "Service categories explain the work in plain, straightforward language",
+      "No account creation or app download required for launch",
+      "Direct assistance from the Taskote support team"
+    ],
+    "photoAlt": "Pest-control professional working outdoors with protective equipment"
+  },
+  "proBanner": {
+    "eyebrow": "For skilled professionals",
+    "title": "Bring your skills to local customers",
+    "desc": "Register with Taskote via WhatsApp to share your trade and receive local service enquiries.",
+    "ctaPrimary": "Register on WhatsApp",
+    "ctaSecondary": "Read the FAQ",
+    "photoAlt": "Service professional standing outdoors"
+  },
+  "bottomCta": {
+    "title": "Looking for local service help?",
+    "text": "Connect with us on WhatsApp to enquire about service professionals for your home, shop or office.",
+    "primaryBtn": "Chat on WhatsApp",
+    "secondaryBtn": "Browse services"
+  }
+}

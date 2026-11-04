@@ -1,0 +1,88 @@
+{
+  "siteTitle": "Taskote",
+  "tagline": "Local services across Kerala.",
+  "skipLink": "Skip to content",
+  "whatsappNotice": {
+    "title": "WhatsApp Business launching soon.",
+    "text": "Our official WhatsApp Business connection is being activated for launch. You will be able to message us directly as soon as it goes live.",
+    "dismiss": "Dismiss"
+  },
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "services": "Services",
+    "forProfessionals": "For professionals",
+    "faq": "FAQ",
+    "contact": "Contact",
+    "getStarted": "Get started"
+  },
+  "footer": {
+    "tagline": "Local services across Kerala.",
+    "servicesHeading": "Services",
+    "companyHeading": "Company",
+    "supportHeading": "Support",
+    "allServices": "All services",
+    "about": "About Taskote",
+    "forProfessionals": "For professionals",
+    "getStarted": "Get started",
+    "faq": "FAQ",
+    "contact": "Contact",
+    "copyright": "Taskote. All rights reserved.",
+    "legalNotice": "Terms and privacy information will be published upon launch"
+  },
+  "buttons": {
+    "findProfessional": "Find a professional",
+    "browseServices": "Browse services",
+    "exploreServices": "Explore services",
+    "viewDetails": "View details →",
+    "enquireWhatsApp": "Enquire on WhatsApp",
+    "chatWhatsApp": "Chat on WhatsApp",
+    "registerWhatsApp": "Register on WhatsApp",
+    "joinAsProfessional": "Join as a professional",
+    "readFaq": "Read the FAQ",
+    "contactUs": "Contact us",
+    "getStarted": "Get started",
+    "allServices": "All services",
+    "search": "Search",
+    "sendMessage": "Send message"
+  },
+  "serviceFinder": {
+    "label": "Service category",
+    "button": "Find a professional"
+  },
+  "serviceFilter": {
+    "label": "Search services",
+    "placeholder": "Search services (AC, Electrical, Plumbing...)",
+    "button": "Search",
+    "statusAll": "Showing all eight services.",
+    "statusNone": "No matching services.",
+    "statusOne": " matching service.",
+    "statusMany": " matching services."
+  },
+  "contactForm": {
+    "title": "Send us a message",
+    "note": "We recommend contacting us on WhatsApp for fast response. You can also submit an enquiry below.",
+    "nameLabel": "Your name",
+    "emailLabel": "Email",
+    "topicLabel": "Topic",
+    "topics": [
+      "Customer service enquiry",
+      "Joining as a professional",
+      "Partnership enquiry",
+      "Something else"
+    ],
+    "messageLabel": "Message",
+    "submitButton": "Send message",
+    "messages": {
+      "disconnected": "Direct form messaging is being connected. Please reach us via WhatsApp Business for prompt assistance.",
+      "sending": "Sending…",
+      "sent": "Message sent. Thank you.",
+      "failed": "Your message could not be sent. Please try again later or reach us on WhatsApp.",
+      "validation": "Please enter your name, a valid email address, and a message."
+    }
+  },
+  "breadcrumbs": {
+    "home": "Home",
+    "services": "Services"
+  }
+}

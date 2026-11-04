@@ -1,0 +1,72 @@
+{
+  "meta": {
+    "title": "About Taskote",
+    "description": "Taskote is a local services marketplace connecting customers and skilled professionals across Kerala."
+  },
+  "hero": {
+    "eyebrow": "Local services, for everyday needs",
+    "title": "About Taskote",
+    "lead": "Taskote is a local services marketplace helping customers explore listed categories for homes, shops, offices and commercial establishments, and helping skilled professionals connect with local service requests. For our public launch, enquiries are handled directly via WhatsApp Business.",
+    "ctaPrimary": "Explore services",
+    "ctaSecondary": "For professionals",
+    "caption": "Connecting customers with local skills",
+    "photoAlt": "A service professional standing outdoors"
+  },
+  "missionVision": {
+    "mission": {
+      "title": "Mission",
+      "lead": "To make local service categories straightforward to explore and help customers find reliable, skilled assistance across Kerala."
+    },
+    "vision": {
+      "title": "Vision",
+      "lead": "To connect Kerala communities with trusted local professionals for homes, shops, offices and commercial establishments through accessible, direct channels."
+    }
+  },
+  "values": {
+    "title": "Our values",
+    "items": [
+      {
+        "title": "Trust",
+        "desc": "Clear information about services and honest communication."
+      },
+      {
+        "title": "People first",
+        "desc": "Built around the practical needs of customers and skilled workers."
+      },
+      {
+        "title": "Reliability",
+        "desc": "Respect for people’s time, clear expectations, and quality work."
+      },
+      {
+        "title": "Community",
+        "desc": "Supporting local skills and independent livelihoods across Kerala."
+      }
+    ]
+  },
+  "howItHelps": {
+    "customers": {
+      "title": "How Taskote helps customers",
+      "items": [
+        "Discover which skilled professionals can handle your job",
+        "Understand exactly what each service covers with clear scopes",
+        "Fast, direct enquiries via WhatsApp Business",
+        "Personal assistance from the Taskote support team"
+      ]
+    },
+    "professionals": {
+      "title": "How Taskote helps professionals",
+      "items": [
+        "Register your trade and service coverage areas",
+        "Receive direct enquiries from nearby customers",
+        "Quick WhatsApp registration with no complicated initial setup",
+        "Build your local reputation and customer base"
+      ]
+    }
+  },
+  "bottomCta": {
+    "title": "Be part of Taskote",
+    "text": "Enquire about a service as a customer, or register as a skilled professional.",
+    "primaryBtn": "Enquire on WhatsApp",
+    "secondaryBtn": "Join as a professional"
+  }
+}

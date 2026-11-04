@@ -1,0 +1,18 @@
+{
+  "meta": {
+    "title": "Services | Taskote",
+    "description": "Browse listed local service categories on Taskote for homes, shops, offices and establishments. Enquire directly via WhatsApp Business."
+  },
+  "hero": {
+    "eyebrow": "Our services",
+    "title": "Explore Local Services in One Place",
+    "lead": "Browse categories for homes, shops, offices and commercial establishments. Review service details and connect directly with us on WhatsApp to enquire about nearby professionals.",
+    "photoAlt": "Electrician working at a home electrical panel"
+  },
+  "bottomCta": {
+    "title": "Ready to find a professional?",
+    "text": "Send us a message on WhatsApp with your requirement to enquire about verified professionals in your area.",
+    "primaryBtn": "Enquire on WhatsApp",
+    "secondaryBtn": "For professionals"
+  }
+}

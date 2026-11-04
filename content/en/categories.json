@@ -1,0 +1,329 @@
+[
+  {
+    "slug": "ac-repair",
+    "name": "AC Repair",
+    "img": "ac-repair",
+    "photoAlt": "AC Repair professional servicing an air conditioner unit",
+    "searchTerms": "ac air conditioner repair service cooling gas leak installation maintenance split window",
+    "short": "Servicing, repair and installation of split and window air conditioners.",
+    "intro": "Kerala summers are hard on air conditioners. Taskote connects you with local technicians who can service, repair or install your AC.",
+    "coversTitle": "What this service includes",
+    "covers": [
+      "Routine servicing and cleaning",
+      "Cooling problems and gas checks",
+      "Water leakage from the indoor unit",
+      "Unusual noise or vibration",
+      "New split or window AC installation",
+      "Uninstalling and refitting when you move"
+    ],
+    "factsTitle": "Signs your AC needs attention",
+    "facts": [
+      "It runs but the room stays warm",
+      "Water drips from the indoor unit",
+      "A burning or musty smell when it starts",
+      "The outdoor unit is noisy or keeps switching off",
+      "Your electricity bill has risen without a reason"
+    ],
+    "prepTitle": "Before the technician arrives",
+    "prepSubtitle": "A few minutes of preparation makes the visit smoother.",
+    "prep": [
+      "Clear space around the indoor and outdoor units",
+      "Note the brand, model and how old the AC is",
+      "Keep the remote and any warranty card ready",
+      "Mention if the unit is on a high wall or balcony"
+    ],
+    "otherServicesTitle": "Other services",
+    "bottomCta": {
+      "title": "Looking for AC repair?",
+      "text": "Send us a message on WhatsApp with your location and requirement to enquire about nearby AC Repair professionals.",
+      "primaryBtn": "Enquire on WhatsApp",
+      "secondaryBtn": "Browse other services"
+    }
+  },
+  {
+    "slug": "electrical",
+    "name": "Electrical",
+    "img": "electrical",
+    "photoAlt": "Electrician working at a home electrical panel",
+    "searchTerms": "electrical electrician wiring switches sockets fan lights mcb tripping repair installation fuse",
+    "short": "Wiring, switches, fittings and safe fault-finding at home and work.",
+    "intro": "Electrical faults should never be a guessing game. Find a local electrician for repairs, fittings and fault-finding for homes, shops and offices.",
+    "coversTitle": "What this service includes",
+    "covers": [
+      "Switches, sockets and regulators",
+      "Fan, light and fixture fitting",
+      "MCB and distribution board problems",
+      "Frequent tripping and power faults",
+      "Earthing checks",
+      "New points and extension wiring"
+    ],
+    "factsTitle": "Call an electrician if you notice",
+    "facts": [
+      "Switches or sockets that feel warm",
+      "Sparks, burning smell or scorch marks",
+      "The MCB trips again and again",
+      "Lights that flicker across the house",
+      "A tingling feel when touching metal appliances"
+    ],
+    "prepTitle": "Stay safe until they arrive",
+    "prepSubtitle": "A few minutes of preparation makes the visit smoother.",
+    "prep": [
+      "Switch off the affected circuit at the MCB",
+      "Do not touch exposed wires or wet switches",
+      "Unplug appliances connected to the faulty point",
+      "Keep children and pets away from the area"
+    ],
+    "otherServicesTitle": "Other services",
+    "bottomCta": {
+      "title": "Need electrical help?",
+      "text": "Send us a message on WhatsApp with your location and requirement to enquire about nearby Electrical professionals.",
+      "primaryBtn": "Enquire on WhatsApp",
+      "secondaryBtn": "Browse other services"
+    }
+  },
+  {
+    "slug": "plumbing",
+    "name": "Plumbing",
+    "img": "plumbing",
+    "photoAlt": "Plumber inspecting pipes and plumbing fixtures",
+    "searchTerms": "plumbing plumber tap leak pipes drain sink toilet tank motor water heater bathroom blockage",
+    "short": "Leaks, blocked drains, taps, pipes and bathroom fittings.",
+    "intro": "From a dripping tap to a blocked drain, local plumbers can fix and fit the things that keep a home or commercial building running smoothly.",
+    "coversTitle": "What this service includes",
+    "covers": [
+      "Leaking taps and pipes",
+      "Blocked sinks and drains",
+      "Flush tank and toilet repairs",
+      "Water tank and motor connections",
+      "Wash basin and shower fitting",
+      "Water heater connections"
+    ],
+    "factsTitle": "Common plumbing problems",
+    "facts": [
+      "A slow drip that wastes water",
+      "Low water pressure in one tap",
+      "Damp patches on walls or ceilings",
+      "Bad smell from a drain",
+      "A running flush that never stops"
+    ],
+    "prepTitle": "Quick steps before the visit",
+    "prepSubtitle": "A few minutes of preparation makes the visit smoother.",
+    "prep": [
+      "Close the nearest water valve if water is leaking",
+      "Move items away from the affected area",
+      "Take a photo of the leak or fitting",
+      "Know where your main tap is so the plumber can shut it off"
+    ],
+    "otherServicesTitle": "Other services",
+    "bottomCta": {
+      "title": "Need a plumber?",
+      "text": "Send us a message on WhatsApp with your location and requirement to enquire about nearby Plumbing professionals.",
+      "primaryBtn": "Enquire on WhatsApp",
+      "secondaryBtn": "Browse other services"
+    }
+  },
+  {
+    "slug": "carpentry",
+    "name": "Carpentry",
+    "img": "carpentry",
+    "photoAlt": "Carpenter working with wood furniture",
+    "searchTerms": "carpentry carpenter woodwork furniture door window shelves cupboard lock hinges repair",
+    "short": "Furniture repair, doors, windows and custom woodwork.",
+    "intro": "Wood in a humid climate needs care. Find carpenters for repairs, fittings and made-to-measure work for homes, shops and offices.",
+    "coversTitle": "What this service includes",
+    "covers": [
+      "Door and window repair",
+      "Hinges, locks and handles",
+      "Furniture repair and assembly",
+      "Wardrobes and shelves",
+      "Bed and cot repair",
+      "Small custom woodwork"
+    ],
+    "factsTitle": "When woodwork needs repair",
+    "facts": [
+      "A door that sticks or will not close",
+      "Hinges that sag or squeak",
+      "Wardrobe doors that drop out of line",
+      "Swollen or cracked panels",
+      "Furniture that wobbles"
+    ],
+    "prepTitle": "To get an accurate quote",
+    "prepSubtitle": "A few minutes of preparation makes the visit smoother.",
+    "prep": [
+      "Take photos of the item and the problem",
+      "Measure the space for new shelves or wardrobes",
+      "Decide on the wood or finish you prefer",
+      "Clear the work area of belongings"
+    ],
+    "otherServicesTitle": "Other services",
+    "bottomCta": {
+      "title": "Looking for carpentry help?",
+      "text": "Send us a message on WhatsApp with your location and requirement to enquire about nearby Carpentry professionals.",
+      "primaryBtn": "Enquire on WhatsApp",
+      "secondaryBtn": "Browse other services"
+    }
+  },
+  {
+    "slug": "appliance-repair",
+    "name": "Appliance Repair",
+    "img": "appliance-repair",
+    "photoAlt": "Technician repairing a washing machine",
+    "searchTerms": "appliance repair washing machine refrigerator fridge microwave oven water purifier mixer grinder",
+    "short": "Washing machines, refrigerators and other appliances.",
+    "intro": "When a washing machine stops mid-cycle or a fridge stops cooling, a local technician can diagnose and repair it quickly.",
+    "coversTitle": "What this service includes",
+    "covers": [
+      "Washing machines",
+      "Refrigerators",
+      "Microwave ovens",
+      "Water purifiers",
+      "Mixers and grinders",
+      "Other small home appliances"
+    ],
+    "factsTitle": "Tell the technician",
+    "facts": [
+      "The brand, model and age of the appliance",
+      "What happened just before it stopped",
+      "Any error codes on the display",
+      "Whether it is still under warranty",
+      "If it has been repaired before"
+    ],
+    "prepTitle": "Before the visit",
+    "prepSubtitle": "A few minutes of preparation makes the visit smoother.",
+    "prep": [
+      "Empty the appliance and clear space around it",
+      "Keep the warranty card and bill handy",
+      "Do not open the back panel yourself",
+      "Make sure there is a working power point nearby"
+    ],
+    "otherServicesTitle": "Other services",
+    "bottomCta": {
+      "title": "Need appliance repair?",
+      "text": "Send us a message on WhatsApp with your location and requirement to enquire about nearby Appliance Repair professionals.",
+      "primaryBtn": "Enquire on WhatsApp",
+      "secondaryBtn": "Browse other services"
+    }
+  },
+  {
+    "slug": "painting",
+    "name": "Painting",
+    "img": "painting",
+    "photoAlt": "Painter applying paint to an interior wall",
+    "searchTerms": "painting painter interior exterior wall putty finish ceiling waterproof polish coating",
+    "short": "Interior and exterior wall painting and finishing.",
+    "intro": "Refresh a room or repaint an entire establishment. Local painters can help with preparation, painting and durable finishing.",
+    "coversTitle": "What this service includes",
+    "covers": [
+      "Interior wall painting",
+      "Exterior and compound walls",
+      "Wall preparation and putty",
+      "Ceilings",
+      "Wood and metal painting",
+      "Touch-ups after repairs"
+    ],
+    "factsTitle": "Get a clearer quote by deciding",
+    "facts": [
+      "Which rooms or walls need painting",
+      "Whether the walls need repair or damp treatment",
+      "The finish you want, matt or glossy",
+      "Who buys the paint and materials",
+      "When the space can be emptied"
+    ],
+    "prepTitle": "Preparing your rooms",
+    "prepSubtitle": "A few minutes of preparation makes the visit smoother.",
+    "prep": [
+      "Move or cover furniture and electronics",
+      "Take down curtains, frames and wall fittings",
+      "Note any damp, cracks or flaking paint",
+      "Ensure access to power and water"
+    ],
+    "otherServicesTitle": "Other services",
+    "bottomCta": {
+      "title": "Looking for painting services?",
+      "text": "Send us a message on WhatsApp with your location and requirement to enquire about nearby Painting professionals.",
+      "primaryBtn": "Enquire on WhatsApp",
+      "secondaryBtn": "Browse other services"
+    }
+  },
+  {
+    "slug": "cleaning",
+    "name": "Cleaning",
+    "img": "cleaning",
+    "photoAlt": "Cleaning professional wiping a table with yellow gloves",
+    "searchTerms": "cleaning deep clean kitchen bathroom tile sofa carpet vacuum sanitize office home shop",
+    "short": "Home and office cleaning, deep cleaning and kitchen care.",
+    "intro": "From a regular tidy to a deep clean before a festival or move, find local cleaning professionals for homes and commercial premises.",
+    "coversTitle": "What this service includes",
+    "covers": [
+      "Full home and office deep cleaning",
+      "Kitchen and chimney cleaning",
+      "Bathroom and tile cleaning",
+      "Sofa and carpet cleaning",
+      "Post-renovation cleaning",
+      "Move-in and move-out cleaning"
+    ],
+    "factsTitle": "Choose the right kind of clean",
+    "facts": [
+      "Regular cleaning keeps a tidy space maintained",
+      "Deep cleaning reaches grime in kitchens and bathrooms",
+      "Post-renovation cleaning removes fine dust and residue",
+      "Move-in cleaning prepares an empty property"
+    ],
+    "prepTitle": "Before the cleaners arrive",
+    "prepSubtitle": "A few minutes of preparation makes the visit smoother.",
+    "prep": [
+      "Put away valuables and fragile items",
+      "Tell them about allergies or products to avoid",
+      "Make sure water and power are on",
+      "Point out areas that need extra care"
+    ],
+    "otherServicesTitle": "Other services",
+    "bottomCta": {
+      "title": "Need a thorough clean?",
+      "text": "Send us a message on WhatsApp with your location and requirement to enquire about nearby Cleaning professionals.",
+      "primaryBtn": "Enquire on WhatsApp",
+      "secondaryBtn": "Browse other services"
+    }
+  },
+  {
+    "slug": "pest-control",
+    "name": "Pest Control",
+    "img": "pest-control",
+    "photoAlt": "Pest-control professional working outdoors with protective equipment",
+    "searchTerms": "pest control termites cockroaches ants mosquitoes bed bugs rodents insects spray treatment",
+    "short": "Treatment for termites, cockroaches, ants, mosquitoes and rodents.",
+    "intro": "Kerala’s warm, humid weather brings pests indoors. Find professionals trained to treat them safely with the right equipment.",
+    "coversTitle": "What this service includes",
+    "covers": [
+      "Cockroaches and ants",
+      "Termite treatment",
+      "Mosquito control",
+      "Bed bugs",
+      "Rodents",
+      "Garden and compound treatment"
+    ],
+    "factsTitle": "Early signs of a pest problem",
+    "facts": [
+      "Mud tubes or hollow-sounding wood (termites)",
+      "Droppings in cupboards or kitchens",
+      "Bites or small stains on bedding",
+      "Frequent insects around drains and food areas",
+      "Chewed wires or packaging"
+    ],
+    "prepTitle": "Preparing your premises",
+    "prepSubtitle": "A few minutes of preparation makes the visit smoother.",
+    "prep": [
+      "Cover or store food and utensils",
+      "Keep children, pets and plants away during treatment",
+      "Ask the professional how long to stay out of the room",
+      "Ask which products they will use"
+    ],
+    "otherServicesTitle": "Other services",
+    "bottomCta": {
+      "title": "Need pest control?",
+      "text": "Send us a message on WhatsApp with your location and requirement to enquire about nearby Pest Control professionals.",
+      "primaryBtn": "Enquire on WhatsApp",
+      "secondaryBtn": "Browse other services"
+    }
+  }
+]

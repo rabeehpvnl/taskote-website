@@ -1,0 +1,13 @@
+{
+  "name": "jobco-public-website",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Static public marketing website for Taskote (no dependencies).",
+  "scripts": {
+    "build": "node build.mjs",
+    "build:vercel": "node build.mjs",
+    "start": "node build.mjs && node serve.mjs",
+    "serve": "node serve.mjs"
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "meta": {
+    "title": "Contact | Taskote",
+    "description": "Contact Taskote via WhatsApp Business for service enquiries, or reach our public business email at official@taskote.in."
+  },
+  "hero": {
+    "title": "Get in touch with Taskote",
+    "lead": "Have questions about a service, trade partnership, or working with Taskote? Message us on WhatsApp Business for the quickest response."
+  },
+  "info": {
+    "whatsAppLabel": "WhatsApp Business",
+    "whatsAppAction": "Chat on WhatsApp",
+    "emailLabel": "Public Email",
+    "emailNotice": "Intended public business address (mailbox in setup; WhatsApp is our active response channel)",
+    "phoneLabel": "WhatsApp Support",
+    "hoursLabel": "Direct response across Kerala",
+    "locationLabel": "Location",
+    "locationValue": "Kerala, India",
+    "placeholderTag": "Support Channel",
+    "placeholderNotice": "For immediate service enquiries or professional registrations, please connect via WhatsApp Business.",
+    "photoAlt": "Customer support professional ready to assist"
+  },
+  "form": {
+    "title": "Send an enquiry",
+    "note": "We recommend contacting us via WhatsApp Business for prompt response. You can also leave your details below.",
+    "nameLabel": "Your name",
+    "emailLabel": "Email",
+    "topicLabel": "Topic",
+    "topics": [
+      "Customer service enquiry",
+      "Joining as a professional",
+      "Partnership enquiry",
+      "Something else"
+    ],
+    "messageLabel": "Message",
+    "submitBtn": "Send message"
+  }
+}

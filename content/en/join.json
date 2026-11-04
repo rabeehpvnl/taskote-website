@@ -1,0 +1,31 @@
+{
+  "meta": {
+    "title": "Join Taskote as a professional",
+    "description": "Skilled professionals in Kerala can register with Taskote via WhatsApp to receive local service enquiries."
+  },
+  "hero": {
+    "title": "Grow your work with Taskote",
+    "lead": "If you are an experienced professional in Kerala, register with Taskote directly via WhatsApp to receive enquiries from customers near you.",
+    "primaryBtn": "Register on WhatsApp",
+    "secondaryBtn": "Read the FAQ",
+    "photoAlt": "Smiling professional standing outdoors"
+  },
+  "trades": {
+    "title": "Trades we are looking for"
+  },
+  "expect": {
+    "title": "What to expect",
+    "lead": "Registration is fast and handled directly with our team on WhatsApp.",
+    "points": [
+      "Connect with the Taskote team directly on WhatsApp",
+      "Share your trade, experience, and the areas you cover",
+      "Fast onboarding without complicated initial app requirements",
+      "Receive direct service enquiries from local homes, shops, and offices"
+    ]
+  },
+  "bottomCta": {
+    "title": "Ready to join Taskote?",
+    "text": "Send us a message on WhatsApp with your trade and location to get started.",
+    "primaryBtn": "Register on WhatsApp"
+  }
+}

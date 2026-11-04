@@ -1,0 +1,89 @@
+{
+  "meta": {
+    "title": "FAQ and help | Taskote",
+    "description": "Frequently asked questions about Taskote services, enquiries, payments and professional registration."
+  },
+  "hero": {
+    "title": "Frequently asked questions",
+    "lead": "Helpful answers about services, WhatsApp enquiries, payments and joining as a professional."
+  },
+  "categories": [
+    {
+      "key": "services",
+      "title": "Services and enquiries",
+      "items": [
+        [
+          "How do I enquire about a service?",
+          "Browse the service categories on this website, then click 'Enquire on WhatsApp' or message our WhatsApp Business number with your job requirement and location."
+        ],
+        [
+          "Which services does Taskote cover?",
+          "Taskote currently lists eight primary service categories: AC Repair, Electrical, Plumbing, Carpentry, Appliance Repair, Painting, Cleaning, and Pest Control."
+        ],
+        [
+          "Is Taskote only for homes?",
+          "No. Taskote is a local services marketplace for residential and commercial requirements, including homes, shops, offices, and other establishments across Kerala."
+        ],
+        [
+          "How do I know what a service covers?",
+          "Each service category page outlines what kinds of work are typically covered, helpful signs to watch for, and practical preparation tips before work begins."
+        ]
+      ]
+    },
+    {
+      "key": "pricing",
+      "title": "Pricing and payments",
+      "items": [
+        [
+          "Can I pay through this website?",
+          "No. This website does not accept payments or charge transaction fees. Service fees are settled directly between you and the service professional as agreed."
+        ],
+        [
+          "How do I know the price of a job?",
+          "Charges depend on the exact scope of work, labor required, and replacement parts or materials. You can discuss job details and estimates directly when enquiring via WhatsApp."
+        ]
+      ]
+    },
+    {
+      "key": "professionals",
+      "title": "For skilled professionals",
+      "items": [
+        [
+          "How do I join Taskote as a professional?",
+          "Click 'Register on WhatsApp' or send a message to our WhatsApp Business number with your trade, experience, and the areas in Kerala where you work."
+        ],
+        [
+          "What are the requirements to join?",
+          "You should be an experienced tradesperson or technician operating in Kerala with reliable local references and a commitment to quality work."
+        ],
+        [
+          "Which trades can register?",
+          "We welcome professionals specializing in AC Repair, Electrical, Plumbing, Carpentry, Appliance Repair, Painting, Cleaning, and Pest Control."
+        ]
+      ]
+    },
+    {
+      "key": "launch",
+      "title": "Launch and WhatsApp support",
+      "items": [
+        [
+          "Do I need to create an account or download an app?",
+          "No. For our public launch, all customer enquiries and professional registrations are handled directly via WhatsApp Business. No account or password is required."
+        ],
+        [
+          "Why is Taskote operating via WhatsApp?",
+          "WhatsApp offers instant, direct communication between customers, professionals, and the Taskote team without the friction of app downloads or account logins."
+        ],
+        [
+          "How can I reach the Taskote team?",
+          "You can message us directly on WhatsApp Business or submit a query through our Contact page."
+        ]
+      ]
+    }
+  ],
+  "bottomCta": {
+    "title": "Still have questions?",
+    "text": "Send us a message on WhatsApp or get in touch through our contact page.",
+    "buttonText": "Contact us"
+  }
+}
