@@ -14,6 +14,28 @@
 
 export const CONTACT_EMAIL = (process.env.TASKOTE_CONTACT_EMAIL || 'official@taskote.in').trim();
 
+/**
+ * Professional Registration Google Form URL
+ *
+ * Centralized setting: when provided, the "Register as a professional" CTA opens this Google Form.
+ * Until the actual URL is provided, keep 'YOUR_GOOGLE_FORM_URL' placeholder or set via `TASKOTE_GOOGLE_FORM_URL`.
+ * When unconfigured/placeholder, the website safely handles the action without navigating to an invalid destination.
+ */
+export const GOOGLE_FORM_URL = (process.env.TASKOTE_GOOGLE_FORM_URL || 'YOUR_GOOGLE_FORM_URL').trim();
+
+export function isGoogleFormConfigured(url = GOOGLE_FORM_URL) {
+  if (!url) return false;
+  if (url === 'YOUR_GOOGLE_FORM_URL' || url === 'PLACEHOLDER' || url.includes('YOUR_GOOGLE_FORM')) return false;
+  return /^https?:\/\//i.test(url);
+}
+
+export function getGoogleFormUrl() {
+  if (isGoogleFormConfigured()) {
+    return GOOGLE_FORM_URL;
+  }
+  return '#pro-registration-notice';
+}
+
 export const WHATSAPP_CONFIG = {
   // Official WhatsApp Business number for public launch:
   phoneNumber: (process.env.TASKOTE_WHATSAPP_NUMBER || '919526063667').trim(),

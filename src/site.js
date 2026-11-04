@@ -54,6 +54,31 @@
     }
   });
 
+  // 1b. Pro Google Form notice handling (when form URL is unconfigured placeholder)
+  var proNotice = document.getElementById('pro-form-notice');
+  var proNoticeClose = document.getElementById('pro-form-notice-close');
+  if (proNoticeClose && proNotice) {
+    proNoticeClose.addEventListener('click', function () {
+      proNotice.hidden = true;
+    });
+  }
+
+  document.querySelectorAll('a[href="#pro-registration-notice"]').forEach(function (a) {
+    a.addEventListener('click', function (e) {
+      e.preventDefault();
+      if (proNotice) {
+        proNotice.hidden = false;
+        proNotice.focus();
+      }
+    });
+  });
+
+  document.addEventListener('keydown', function (e) {
+    if (e.key === 'Escape' && proNotice && !proNotice.hidden) {
+      proNotice.hidden = true;
+    }
+  });
+
   // 2. Mobile menu
   var btn = document.getElementById('menu-btn'), menu = document.getElementById('site-menu');
   if (btn && menu) {

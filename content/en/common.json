@@ -7,6 +7,11 @@
     "text": "Our official WhatsApp Business connection is being activated for launch. You will be able to message us directly as soon as it goes live.",
     "dismiss": "Dismiss"
   },
+  "proFormNotice": {
+    "title": "Registration form opening soon.",
+    "text": "Our Google Form for professional registration is being configured. In the meantime, you can message us directly on WhatsApp.",
+    "dismiss": "Dismiss"
+  },
   "nav": {
     "home": "Home",
     "about": "About",

@@ -2,7 +2,7 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
-import { WHATSAPP_CONFIG, buildWhatsAppUrl, isWhatsAppConfigured, CONTACT_EMAIL } from './whatsapp.config.mjs';
+import { WHATSAPP_CONFIG, buildWhatsAppUrl, isWhatsAppConfigured, CONTACT_EMAIL, GOOGLE_FORM_URL, isGoogleFormConfigured, getGoogleFormUrl } from './whatsapp.config.mjs';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -141,6 +141,7 @@ function layout({ baseRoute, locale, rootEnglish, title, desc, body, c }) {
 <link rel="stylesheet" href="/styles.css"></head>
 <body><a class="skip" href="#main">${c.common.skipLink}</a>
 <div class="notice" id="whatsapp-notice" tabindex="-1" role="dialog" aria-modal="true" aria-labelledby="wa-notice-title" hidden><div class="wrap"><span><b id="wa-notice-title">${c.common.whatsappNotice.title}</b> ${c.common.whatsappNotice.text}</span><button type="button" id="whatsapp-notice-close">${c.common.whatsappNotice.dismiss}</button></div></div>
+<div class="notice" id="pro-form-notice" tabindex="-1" role="dialog" aria-modal="true" aria-labelledby="pro-notice-title" hidden><div class="wrap"><span><b id="pro-notice-title">${c.common.proFormNotice.title}</b> ${c.common.proFormNotice.text}</span><button type="button" id="pro-form-notice-close">${c.common.proFormNotice.dismiss}</button></div></div>
 <header class="site-header"><div class="wrap bar">
 <a class="brand" href="${brandHref}" aria-label="Taskote home"><img src="/assets/img/logo.jpg" alt="" width="38" height="38">Taskote</a>
 <button class="menu-btn" id="menu-btn" aria-expanded="false" aria-controls="site-menu" aria-label="Menu"><span></span></button>
@@ -366,10 +367,60 @@ function buildGetStartedPage(locale, rootEnglish) {
   const c = locale === 'ml' ? mlContent : enContent;
   const p = c.auth.getStarted;
 
-  const body = `<section class="phero plain auth-hero"><div class="wrap"><div class="auth-layout"><div class="auth-visual"><img src="/assets/img/appliance-repair.jpg" alt="${esc(p.photoAlt)}" width="572" height="320"><div class="auth-caption"><span>${esc(p.visualCaption.title)}</span><strong>${esc(p.visualCaption.sub)}</strong></div></div><div class="gate"><div class="form"><p class="eyebrow">${esc(p.eyebrow)}</p><h1 style="font-size:34px">${esc(p.title)}</h1><p class="lead" style="margin:12px 0 var(--s3)">${esc(p.lead)}</p>
-${waChoice('getStartedCustomer', esc(p.customerChoice.title), esc(p.customerChoice.desc), esc(p.customerChoice.cta), locale)}
-${waChoice('getStartedPro', esc(p.proChoice.title), esc(p.proChoice.desc), esc(p.proChoice.cta), locale)}
-<p style="margin:var(--s3) 0 0;color:var(--muted);font-size:14px;text-align:center">${esc(p.note)}</p></div></div></div></div></section>`;
+  const customerUrl = buildWhatsAppUrl('customer', locale);
+  const isWaConfigured = isWhatsAppConfigured();
+  const customerTarget = isWaConfigured ? ' target="_blank" rel="noopener noreferrer"' : '';
+
+  const proUrl = getGoogleFormUrl();
+  const isFormConfigured = isGoogleFormConfigured();
+  const proTarget = isFormConfigured ? ' target="_blank" rel="noopener noreferrer"' : '';
+
+  const waIcon = `<svg class="btn-icon" width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.62C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 9.27 20.92 6.78 19.05 4.91C17.18 3.03 14.69 2 12.04 2M12.05 3.67C14.25 3.67 16.31 4.53 17.87 6.09C19.42 7.65 20.28 9.72 20.28 11.92C20.28 16.46 16.58 20.15 12.04 20.15C10.56 20.15 9.11 19.76 7.85 19L7.55 18.83L4.43 19.65L5.26 16.61L5.06 16.29C4.24 14.99 3.81 13.47 3.81 11.91C3.81 7.37 7.5 3.67 12.05 3.67M9.53 7.35C9.34 7.35 9.04 7.42 8.78 7.7C8.52 7.97 7.78 8.67 7.78 10.09C7.78 11.5 8.82 12.87 8.96 13.06C9.11 13.25 11 16.33 13.96 17.47C16.41 18.42 16.91 18.23 17.44 18.18C17.98 18.13 19.16 17.48 19.41 16.79C19.66 16.1 19.66 15.5 19.58 15.38C19.51 15.25 19.32 15.18 19.03 15.04C18.75 14.89 17.37 14.21 17.11 14.12C16.85 14.02 16.66 13.98 16.48 14.26C16.29 14.54 15.76 15.18 15.6 15.38C15.43 15.57 15.27 15.59 14.98 15.45C14.7 15.31 13.79 15.01 12.71 14.05C11.87 13.3 11.3 12.37 11.14 12.09C10.98 11.81 11.12 11.66 11.27 11.51C11.4 11.38 11.56 11.17 11.71 11C11.85 10.83 11.9 10.71 12 10.52C12.1 10.33 12.05 10.17 11.97 10.03C11.9 9.89 11.33 8.5 11.1 7.92C10.87 7.37 10.64 7.44 10.46 7.44C10.3 7.43 10.11 7.43 9.92 7.43C9.73 7.43 9.53 7.35 9.53 7.35Z"/></svg>`;
+
+  const arrowIcon = `<svg class="btn-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"></path><path d="M12 5l7 7-7 7"></path></svg>`;
+
+  const customerCardIcon = `<svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line><path d="M11 8v6"></path><path d="M8 11h6"></path></svg>`;
+
+  const proCardIcon = `<svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path></svg>`;
+
+  const body = `<section class="get-started-section">
+<div class="wrap">
+  <div class="get-started-header">
+    <p class="eyebrow">${esc(p.eyebrow)}</p>
+    <h1>${esc(p.title)}</h1>
+    <p class="lead">${esc(p.lead)}</p>
+  </div>
+  <div class="get-started-grid">
+    <div class="get-started-card customer-card">
+      <div class="card-icon" aria-hidden="true">${customerCardIcon}</div>
+      <div class="card-content">
+        <h2>${esc(p.customerChoice.title)}</h2>
+        <p>${esc(p.customerChoice.desc)}</p>
+      </div>
+      <div class="card-action">
+        <a class="btn" href="${customerUrl}"${customerTarget} data-wa-action="customer" data-wa-locale="${locale}">
+          ${waIcon}
+          <span>${esc(p.customerChoice.cta)}</span>
+        </a>
+      </div>
+    </div>
+    <div class="get-started-card pro-card">
+      <div class="card-icon" aria-hidden="true">${proCardIcon}</div>
+      <div class="card-content">
+        <h2>${esc(p.proChoice.title)}</h2>
+        <p>${esc(p.proChoice.desc)}</p>
+      </div>
+      <div class="card-action">
+        <a class="btn pro-btn" href="${proUrl}"${proTarget} data-pro-action="register"${isFormConfigured ? '' : ' data-placeholder="true"'}>
+          <span>${esc(p.proChoice.cta)}</span>
+          ${arrowIcon}
+        </a>
+      </div>
+    </div>
+  </div>
+  <p class="get-started-note">${esc(p.note)}</p>
+</div>
+</section>`;
 
   return layout({
     baseRoute: '/get-started/',

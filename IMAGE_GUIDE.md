@@ -26,7 +26,7 @@ The website uses exactly **11 image assets**. Below is the complete catalog:
 | **1** | `logo.jpg` | Favicon, Header Brand, Footer Brand | 38×38 px (rendered square) | **512×512 px** (min 256×256) | 1:1 (Square) | JPG/PNG, 90%, sRGB |
 | **2** | `electrical.jpg` | Electrical Category Hero, Service Card, Homepage Mosaic, Services Directory Hero | 572×320 px | **1144×640 px** (or 1200×675) | 16:9 (~1.78:1) | JPG/WebP, 82-85% |
 | **3** | `cleaning.jpg` | Cleaning Category Hero, Service Card, Homepage Mosaic | 572×320 px | **1144×640 px** (or 1200×675) | 16:9 (~1.78:1) | JPG/WebP, 82-85% |
-| **4** | `appliance-repair.jpg` | Appliance Repair Category Hero, Service Card, Homepage Mosaic, Get Started Visual | 572×320 px | **1144×640 px** (or 1200×675) | 16:9 (~1.78:1) | JPG/WebP, 82-85% |
+| **4** | `appliance-repair.jpg` | Appliance Repair Category Hero, Service Card, Homepage Mosaic | 572×320 px | **1144×640 px** (or 1200×675) | 16:9 (~1.78:1) | JPG/WebP, 82-85% |
 | **5** | `ac-repair.jpg` | AC Repair Category Hero, Service Card (Popular & Directory) | 572×320 px | **1144×640 px** (or 1200×675) | 16:9 (~1.78:1) | JPG/WebP, 82-85% |
 | **6** | `plumbing.jpg` | Plumbing Category Hero, Service Card (Popular & Directory) | 572×320 px | **1144×640 px** (or 1200×675) | 16:9 (~1.78:1) | JPG/WebP, 82-85% |
 | **7** | `carpentry.jpg` | Carpentry Category Hero, Service Card (Popular & Directory) | 572×320 px | **1144×640 px** (or 1200×675) | 16:9 (~1.78:1) | JPG/WebP, 82-85% |
@@ -53,7 +53,6 @@ The website uses exactly **11 image assets**. Below is the complete catalog:
   - Homepage "Popular services" grid (`ac-repair`, `plumbing`, `carpentry`, `painting`).
   - Homepage Hero Mosaic (`electrical`, `cleaning`, `appliance-repair`).
   - Homepage Clarity section (`pest-control`).
-  - Get Started screen visual (`appliance-repair`).
 - **Visual advice**:
   - Realistic, professional Kerala context: skilled technicians actively working on real residential or commercial equipment.
   - Good natural lighting, clean composition, uncluttered background.
