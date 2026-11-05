@@ -10,7 +10,7 @@ const ROOT_DIR = __dirname;
 const OUT = path.join(ROOT_DIR, 'dist');
 const ENGLISH_ONLY = process.argv.includes('--english-only');
 const CONTACT_ENDPOINT = (process.env.JOBCO_CONTACT_ENDPOINT || '').trim();
-const SITE_URL = (process.env.JOBCO_SITE_URL || '').trim();
+const SITE_ORIGIN = 'https://taskote.in';
 
 const CONTACT = {
   email: CONTACT_EMAIL,
@@ -40,6 +40,8 @@ const mlContent = loadContent('ml');
 
 /* ---------- Helpers & URL routing ---------- */
 const esc = s => String(s || '').replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
+const escXml = s => String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;').replace(/'/g, '&apos;');
+const absoluteUrl = route => `${SITE_ORIGIN}${route}`;
 
 function routeFor(baseRoute, locale, rootEnglish = false) {
   const clean = baseRoute === '/' ? '/' : `/${baseRoute.replace(/^\/|\/$/g, '')}/`;
@@ -116,12 +118,12 @@ function layout({ baseRoute, locale, rootEnglish, title, desc, body, c }) {
   const targetLangAttr = isMl ? ' lang="en"' : ' lang="ml"';
   const langLinkHtml = !ENGLISH_ONLY ? `<div class="lang-switcher"><a class="nl lang-toggle" href="${targetUrl}" aria-label="${targetAria}"><span class="lang-current">${currentLang}</span><svg class="lang-arrow" viewBox="0 0 10 6" width="9" height="6" aria-hidden="true" focusable="false"><path d="M1 1.25L5 5.25L9 1.25" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" fill="none"/></svg></a><div class="lang-menu"><a class="lang-menu-item" href="${targetUrl}"${targetLangAttr} aria-label="${targetAria}">${targetLang}</a></div></div>` : '';
 
-  const currentPath = locale === 'ml' ? routeFor(baseRoute, 'ml') : (rootEnglish ? routeFor(baseRoute, 'en', true) : routeFor(baseRoute, 'en', false));
-  const enCanon = routeFor(baseRoute, 'en', false);
+  const currentPath = locale === 'ml' ? routeFor(baseRoute, 'ml') : routeFor(baseRoute, 'en', true);
+  const enCanon = routeFor(baseRoute, 'en', true);
   const mlCanon = routeFor(baseRoute, 'ml', false);
 
-  const canon = SITE_URL ? `<link rel="canonical" href="${SITE_URL.replace(/\/$/, '')}${currentPath}">` : `<link rel="canonical" href="${currentPath}">`;
-  const alternates = !ENGLISH_ONLY ? `<link rel="alternate" hreflang="en" href="${enCanon}"><link rel="alternate" hreflang="ml" href="${mlCanon}"><link rel="alternate" hreflang="x-default" href="${enCanon}">` : '';
+  const canon = `<link rel="canonical" href="${absoluteUrl(currentPath)}">`;
+  const alternates = !ENGLISH_ONLY ? `<link rel="alternate" hreflang="en" href="${absoluteUrl(enCanon)}"><link rel="alternate" hreflang="ml" href="${absoluteUrl(mlCanon)}"><link rel="alternate" hreflang="x-default" href="${absoluteUrl(enCanon)}">` : '';
 
   const footerServices = c.categories.slice(0, 4).map(s => {
     const sName = esc(isMl && s.displayName ? s.displayName : s.name);
@@ -479,11 +481,16 @@ function buildNotFoundPage() {
 
 /* ---------- Build Process ---------- */
 fs.rmSync(OUT, { recursive: true, force: true });
+const canonicalRoutes = new Set();
 
 function writePage(diskPath, html) {
   const fullDir = path.join(OUT, diskPath);
   fs.mkdirSync(fullDir, { recursive: true });
   fs.writeFileSync(path.join(fullDir, 'index.html'), html);
+
+  // /en/ pages are accessible aliases; the equivalent root English page is canonical.
+  const canonicalPath = diskPath.startsWith('/en/') ? diskPath.slice(3) : diskPath;
+  canonicalRoutes.add(canonicalPath === '/' ? '/' : `/${canonicalPath.replace(/^\/+|\/+$/g, '')}/`);
 }
 
 // 1. Build English Root pages (served at /, /about/, etc.)
@@ -533,7 +540,14 @@ fs.copyFileSync(path.join(ROOT_DIR, 'src', 'styles.css'), path.join(OUT, 'styles
 fs.copyFileSync(path.join(ROOT_DIR, 'src', 'site.js'), path.join(OUT, 'site.js'));
 fs.cpSync(path.join(ROOT_DIR, 'assets'), path.join(OUT, 'assets'), { recursive: true });
 fs.writeFileSync(path.join(OUT, 'config.js'), `window.JOBCO_CONFIG=${JSON.stringify({ WHATSAPP_NUMBER: WHATSAPP_CONFIG.phoneNumber, CONTACT_EMAIL: CONTACT.email, CONTACT_ENDPOINT })};`);
-fs.writeFileSync(path.join(OUT, 'robots.txt'), 'User-agent: *\nAllow: /\n');
+const sitemapUrls = [...canonicalRoutes]
+  .filter(route => fs.existsSync(path.join(OUT, route.replace(/^\/+|\/+$/g, ''), 'index.html')))
+  .sort()
+  .map(route => `  <url><loc>${escXml(absoluteUrl(route))}</loc></url>`)
+  .join('\n');
+const sitemap = `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${sitemapUrls}\n</urlset>\n`;
+fs.writeFileSync(path.join(OUT, 'sitemap.xml'), sitemap);
+fs.writeFileSync(path.join(OUT, 'robots.txt'), `User-agent: *\nAllow: /\nSitemap: ${SITE_ORIGIN}/sitemap.xml\n`);
 
 const totalPages = ENGLISH_ONLY ? 16 : 48; // 16 root-EN + 16 /en/ + 16 /ml/
 console.log(`Successfully built ${totalPages} pages (${ENGLISH_ONLY ? 'English only' : 'English & Malayalam'}). WhatsApp status: ${isWhatsAppConfigured() ? 'configured' : 'placeholder/unconfigured'}`);
