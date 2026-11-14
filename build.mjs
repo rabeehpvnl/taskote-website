@@ -137,7 +137,7 @@ function layout({ baseRoute, locale, rootEnglish, title, desc, body, c }) {
 <title>${esc(title)}</title><meta name="description" content="${esc(desc)}">${canon}${alternates}
 <meta property="og:type" content="website"><meta property="og:site_name" content="Taskote"><meta property="og:title" content="${esc(title)}"><meta property="og:description" content="${esc(desc)}">
 <meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="${esc(title)}"><meta name="twitter:description" content="${esc(desc)}">
-<meta name="theme-color" content="#5E29FF"><link rel="icon" href="/assets/img/logo.jpg">
+<meta name="theme-color" content="#5E29FF"><link rel="icon" type="image/png" sizes="48x48" href="/assets/brand/favicon-48.png"><link rel="icon" type="image/png" sizes="32x32" href="/assets/brand/favicon-32.png"><link rel="apple-touch-icon" sizes="180x180" href="/assets/brand/apple-touch-icon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@700;800&family=Noto+Sans+Malayalam:wght@400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="/styles.css"></head>
@@ -145,13 +145,13 @@ function layout({ baseRoute, locale, rootEnglish, title, desc, body, c }) {
 <div class="notice" id="whatsapp-notice" tabindex="-1" role="dialog" aria-modal="true" aria-labelledby="wa-notice-title" hidden><div class="wrap"><span><b id="wa-notice-title">${c.common.whatsappNotice.title}</b> ${c.common.whatsappNotice.text}</span><button type="button" id="whatsapp-notice-close">${c.common.whatsappNotice.dismiss}</button></div></div>
 <div class="notice" id="pro-form-notice" tabindex="-1" role="dialog" aria-modal="true" aria-labelledby="pro-notice-title" hidden><div class="wrap"><span><b id="pro-notice-title">${c.common.proFormNotice.title}</b> ${c.common.proFormNotice.text}</span><button type="button" id="pro-form-notice-close">${c.common.proFormNotice.dismiss}</button></div></div>
 <header class="site-header"><div class="wrap bar">
-<a class="brand" href="${brandHref}" aria-label="Taskote home"><img src="/assets/img/logo.jpg" alt="" width="38" height="38">Taskote</a>
+<a class="brand" href="${brandHref}" aria-label="Taskote home"><img src="/assets/brand/taskote-brand-final.png" alt="Taskote — Book it. Fix it." width="2172" height="724"></a>
 <button class="menu-btn" id="menu-btn" aria-expanded="false" aria-controls="site-menu" aria-label="Menu"><span></span></button>
 <nav class="nav" id="site-menu" aria-label="Main">${navHtml}${langLinkHtml}<div class="nav-cta"><a class="btn sm" href="${routeFor('/get-started/', locale, rootEnglish)}">${c.common.nav.getStarted}</a></div></nav>
 </div></header>
 <main id="main">${body}</main>
 <footer class="site-footer"><div class="wrap"><div class="fgrid">
-<div><a class="brand" href="${brandHref}"><img src="/assets/img/logo.jpg" alt="" width="38" height="38">Taskote</a><p>${c.common.footer.tagline}</p></div>
+<div><a class="brand" href="${brandHref}" aria-label="Taskote home"><img src="/assets/brand/taskote-footer-dark.png" alt="" width="2172" height="724"></a><p>${c.common.footer.tagline}</p></div>
 <div><h4>${c.common.footer.servicesHeading}</h4>${footerServices}<a href="${routeFor('/services/', locale, rootEnglish)}">${c.common.footer.allServices}</a></div>
 <div><h4>${c.common.footer.companyHeading}</h4><a href="${routeFor('/about/', locale, rootEnglish)}">${c.common.footer.about}</a><a href="${routeFor('/join/', locale, rootEnglish)}">${c.common.footer.forProfessionals}</a><a href="${routeFor('/get-started/', locale, rootEnglish)}">${c.common.footer.getStarted}</a></div>
 <div><h4>${c.common.footer.supportHeading}</h4><a href="${routeFor('/faq/', locale, rootEnglish)}">${c.common.footer.faq}</a><a href="${routeFor('/contact/', locale, rootEnglish)}">${c.common.footer.contact}</a><a href="mailto:${CONTACT.email}" class="footer-email" style="word-break:break-all">${CONTACT.email}</a></div>

@@ -46,7 +46,8 @@ a{color:var(--violet)} ul{margin:0;padding:0;list-style:none}
 .bar{display:flex;align-items:center;gap:var(--s3);min-height:64px}
 .brand{display:flex;align-items:center;gap:9px;text-decoration:none;font:800 23px var(--font-h);color:var(--navy);letter-spacing:-.03em}
 .brand{flex:none;white-space:nowrap}
-.brand img{width:33px;height:33px;border-radius:8px;object-fit:cover}
+.brand img{width:40px;height:40px;border-radius:0;object-fit:contain;display:block;flex:none}
+.site-header .brand img{width:155px;height:auto;max-width:none;object-fit:contain}
 
 .nav{display:flex;gap:4px;margin-left:auto;align-items:center}
 .nav a.nl{color:var(--navy);text-decoration:none;font-weight:600;font-size:14.5px;padding:6px 10px;border-radius:6px}
@@ -348,7 +349,7 @@ textarea{min-height:112px;resize:vertical}
   .btn.sm{min-height:42px;font-size:14px;padding:0 18px}
   html[lang=ml] .btn{font-family:"Noto Sans Malayalam",Inter,system-ui,sans-serif;font-weight:500;font-size:14px;line-height:1.35;min-height:46px;padding:0 20px}
   html[lang=ml] .btn.sm{min-height:40px;font-size:13px;padding:0 14px}
-  .menu-btn{width:42px;height:42px;flex:none;margin-left:auto}.brand{gap:7px}.brand img{width:32px;height:32px}
+  .menu-btn{width:42px;height:42px;flex:none;margin-left:auto}.site-header .brand img{width:130px;height:auto;max-width:none;object-fit:contain}
   .g4,.g3,.g2{grid-template-columns:1fr}
   .cards-2m{grid-template-columns:1fr 1fr!important;gap:12px!important}
   .cards-2m .cb{padding:12px 14px 16px}.cards-2m h3{font-size:16px}.cards-2m p{display:none}
@@ -409,9 +410,10 @@ textarea{min-height:112px;resize:vertical}
   .fgrid>div:last-child h4{grid-column:1/-1;margin-bottom:4px}
   .fbase{margin-top:12px;padding-top:10px;gap:6px}
 }
-@media(max-width:370px){.bar{gap:5px}.brand{font-size:20px}.brand img{width:29px;height:29px}}
+@media(max-width:370px){.bar{gap:5px}}
 @media(prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
 
 .mosaic figure:first-child img{object-position:72% 30%}
 .site-footer .brand{display:flex;padding:0}
+.site-footer .brand img{width:186px;height:auto;object-fit:contain;border-radius:0;background:transparent}
 .phero+.section{padding-top:var(--s5)}
